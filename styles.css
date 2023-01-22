@@ -53,6 +53,8 @@ img{
     font-size:1rem;
     animation:from-bottom calc(var(--duration) * 0.6)  both;
     animation-delay:calc(var(--duration) * 0.7);
+    -webkit-animation:from-bottom calc(var(--duration) * 0.6)  both;
+    -webkit-animation-delay:calc(var(--duration) * 0.7);
     transition: all 1s;
 }
 
@@ -83,12 +85,15 @@ h2{
 main h1{
     font-size: 2rem;
     animation:from-left var(--duration)  both;
+    -webkit-animation:from-left var(--duration)  both;
 }
 main p{
     margin:1.3rem 0;
     line-height:1.6; 
     animation:from-top var(--duration)  both;
     animation-delay:calc(var(--duration) * 0.3);
+    -webkit-animation:from-top var(--duration)  both;
+    -webkit-animation-delay:calc(var(--duration) * 0.3);
 }
 main img{
     max-width:650px;
@@ -146,7 +151,7 @@ main img{
    top: 90.5%;
    z-index: 2;
    animation:grow-image calc(var(--duration) * 0.8) both;
-
+   -webkit-animation:grow-image calc(var(--duration) * 0.8) both;
 }
 
 .build-community h3{
@@ -157,9 +162,12 @@ main img{
     white-space: nowrap;
     animation:from-top var(--duration)  both;
     animation-delay:calc(var(--duration) * 0.8);
+    -webkit-animation:from-top var(--duration)  both;
+    -webkit-animation-delay:calc(var(--duration) * 0.8);
 }
 .build-community .btn{
     animation-delay: var(--duration) ;
+    -o-animation-delay: var(--duration);
 }
 footer{
 
@@ -266,10 +274,11 @@ footer a{
 main img{
     --duration:1.2s;
     animation:grow-image var(--duration) both;
+    -webkit-animation: grow-image var(--duration) both;
 }
 .feature img{
     animation:grow-image calc(var(--duration) * 1.8) both;
-
+    -webkit-animation: grow-image calc(var(--duration) * 1.8) both;
 }
 @keyframes grow-image{
     0%{
