@@ -55,18 +55,8 @@ img{
     animation-delay:calc(var(--duration) * 0.7);
     transition: all 1s;
 }
-.btn:hover{
- background-color: var(--color-light-pink);
-   color:var(--color-dark-cyan);
-}
-header .btn:hover{
-    background-color: var(--color-light-grayish-blue);
 
-   }
-.btn:active{
-    transform: scale(1.1);
-    box-shadow: 0 3px 15px -2px;
-}
+
 header img,
 footer img{
     cursor:pointer;
@@ -253,17 +243,13 @@ font-style: normal;
 	transition: 0.3s ease-in-out;
     z-index:-1;
 }
-.social__links li a:hover::before {
-    transform: scale(1);
-}
+
 .social-icon a .fa-brands {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
-.social-icon a:hover .fa-brands {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
-}
+
 .social__links li:not(:last-child,:first-child){
     margin:0 1rem;
 }
@@ -275,12 +261,7 @@ footer a{
     transition: color 0.3s ease-in;
 }
 
-footer a:hover{
-    color:var(--color-pink);
-}
-.social__links li a:hover {
-    transform: translateY(-5px);
-}
+
 
 main img{
     --duration:1.2s;
@@ -336,6 +317,32 @@ main img{
             opacity:1;
             transform: translateY(0%);
       
+    }
+}
+@media (hover:hover){
+    .btn:hover{
+        background-color: var(--color-light-pink);
+          color:var(--color-dark-cyan);
+       }
+       header .btn:hover{
+           background-color: var(--color-light-grayish-blue);
+       
+          }
+       .btn:active{
+           transform: scale(1.1);
+           box-shadow: 0 3px 15px -2px;
+       }
+       .social__links li a:hover::before {
+        transform: scale(1);
+    }
+    .social-icon a:hover .fa-brands {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+    }
+    footer a:hover{
+        color:var(--color-pink);
+    }
+    .social__links li a:hover {
+        transform: translateY(-5px);
     }
 }
 @media (max-width:56.25em){
