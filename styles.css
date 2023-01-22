@@ -100,7 +100,7 @@ h2{
 }
 .features{
    
-    margin:3rem 0;
+    margin:3rem 0 ;
    padding:2rem;
    position:relative;
    display: flex;
@@ -137,8 +137,9 @@ h2{
     order:2;
 }
 .build-community{
-    max-width: 650px;
-   margin:9rem auto auto;
+    max-width: clamp(330px,85%,650px);
+    min-height: 150px;
+   margin:9rem auto ;
    width: 100%;
    padding: 2rem 4rem;
    display: flex;
@@ -159,7 +160,7 @@ h2{
     font-weight: 700;
     margin:2rem 0;
     font-size:1.5rem;
-    white-space: nowrap;
+    text-align: center;
     animation:from-top var(--duration)  both;
     animation-delay:calc(var(--duration) * 0.8);
     -webkit-animation:from-top var(--duration)  both;
@@ -168,10 +169,11 @@ h2{
 .build-community .btn{
     animation-delay: var(--duration) ;
     -o-animation-delay: var(--duration);
+  margin-bottom: 1rem;
 }
 footer{
 
-    padding:8rem 3rem 1rem;
+    padding:10rem 3rem 1rem;
     background-color: var(--color-dark-cyan);
     max-width: 1400px;
     margin:8rem auto 0;
@@ -383,8 +385,8 @@ footer a{
         padding: 2rem 1rem 1.2rem;
     }
     .build-community{
-        max-width: 450px;
-        padding:1.5rem 2rem; 
+        
+        padding:1rem 2rem; 
         
     }
 }
@@ -426,13 +428,13 @@ footer a{
         align-self: center;
     }
     .build-community{
-        top: 94.6%;
+        top: 93.6%;
     }
    
 }
 @media (max-width:30em) {
     .build-community{
-        max-width: 330px;
+      
         padding:1.24rem; 
     }
     .build-community h3{
