@@ -13,7 +13,7 @@ font-family: 'Poppins', sans-serif; */
     --color-pale-cyan: hsl(193, 100%, 96%);
     --color-dark-cyan: hsl(192, 100%, 9%);
     --color-grayish-blue: hsl(208, 11%, 55%);
-    --duration:1.8s;
+    --duration:1.5s;
 }
 body{
     min-height: 100vh;
@@ -49,7 +49,8 @@ img{
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size:1rem;
-    animation:from-bottom calc(var(--duration) * 0.8)  both;
+    animation:from-bottom calc(var(--duration) * 0.6)  both;
+    animation-delay:calc(var(--duration) * 0.7);
 }
 .btn:hover{
     opacity: 0.85;
@@ -76,14 +77,15 @@ main h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     /* white-space: nowrap; */
-    --duration:1.4s;
+    
     animation:from-left var(--duration)  both;
-
+    
 }
 main p{
     margin:1.3rem 0;
     line-height:1.6; 
     animation:from-top var(--duration)  both;
+    animation-delay:calc(var(--duration) * 0.3);
 }
 main img{
     max-width:650px;
@@ -147,6 +149,8 @@ position:absolute;
    position: absolute;
    top: 90.5%;
    z-index: 2;
+   animation:grow-image calc(var(--duration) * 0.8) both;
+
 }
 
 .build-community h3{
@@ -155,11 +159,14 @@ position:absolute;
     font-weight: 700;
     font-size:1.5rem;
     white-space: nowrap;
+    
     animation:from-top var(--duration)  both;
+    animation-delay:calc(var(--duration) * 0.8);
 }
 .build-community .btn{
 background-color: var(--color-pink);
 color:var(--color-pale-cyan);
+animation-delay: var(--duration) ;
 }
 footer{
 
@@ -314,6 +321,7 @@ main img{
         opacity:0;
         transform: translateY(-50%);
     }
+
     100%{
         
             opacity:1;
