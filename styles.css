@@ -371,8 +371,8 @@ main img{
     }
     .build-community{
         max-width: 450px;
-
         padding:1.5rem 2rem; 
+        
     }
 }
 @media (max-width:37.5em){
@@ -387,7 +387,6 @@ main img{
     .feature .feature__description{
         order:2;
         text-align: center;
-     
     }
     .feature img{
         order: 1;
@@ -413,11 +412,14 @@ main img{
     .copyright{
         align-self: center;
     }
+    .build-community{
+        top: 93%;
+    }
    
 }
 @media (max-width:30em) {
     .build-community{
-        max-width: 320px;
+        max-width: 330px;
         padding:1.24rem; 
     }
     .build-community h3{
