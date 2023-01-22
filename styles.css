@@ -9,9 +9,11 @@
 
 :root{
     --color-pink:hsl(322, 100%, 66%);
+    --color-light-pink:hsl(322, 88%, 81%);
     --color-pale-cyan: hsl(193, 100%, 96%);
     --color-dark-cyan: hsl(192, 100%, 9%);
     --color-grayish-blue: hsl(208, 11%, 55%);
+    --color-light-grayish-blue: hsla(0, 0%, 100%, 0.708);
     --duration:1.5s;
 }
 body{
@@ -45,15 +47,25 @@ img{
     background-color:var(--color-pink);
     color:white;
     border:none;
-    outline:none;
+   
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size:1rem;
     animation:from-bottom calc(var(--duration) * 0.6)  both;
     animation-delay:calc(var(--duration) * 0.7);
+    transition: all 1s;
 }
 .btn:hover{
-    opacity: 0.85;
+ background-color: var(--color-light-pink);
+   color:var(--color-dark-cyan);
+}
+header .btn:hover{
+    background-color: var(--color-light-grayish-blue);
+
+   }
+.btn:active{
+    transform: scale(1.1);
+    box-shadow: 0 3px 15px -2px;
 }
 header img,
 footer img{
@@ -109,9 +121,11 @@ main img{
     margin:3rem auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 12px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
 .feature img{
     max-width:400px;
 }
+
 .feature__description {
     max-width:500px;
     padding:1rem;
