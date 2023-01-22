@@ -333,7 +333,7 @@ main img{
       
     }
 }
-@media (max-width:900px){
+@media (max-width:56.25em){
     header{
         padding:2rem; 
     }
@@ -347,7 +347,7 @@ main img{
         max-width: 390px;
     }
 }
-@media (max-width:780px){
+@media (max-width:49.5em){
     main{
         flex-wrap: wrap;
         justify-content: center;
@@ -359,7 +359,7 @@ main img{
        margin-bottom: 2rem;
     }
     header{
-        padding: 2rem 1.2rem 1.2rem;
+        padding: 2rem 1rem 1.2rem;
     }
     .build-community{
         max-width: 450px;
@@ -367,7 +367,7 @@ main img{
         padding:1.5rem 2rem; 
     }
 }
-@media (max-width:600px){
+@media (max-width:37.5em){
     .features{
         padding:1.5rem;
     }
@@ -407,7 +407,7 @@ main img{
     }
    
 }
-@media (max-width:480px) {
+@media (max-width:30em) {
     .build-community{
         max-width: 320px;
         padding:1.24rem; 
