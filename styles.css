@@ -20,7 +20,7 @@ body{
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
 }
-header,.banner{
+.navigation,.banner{
     max-width:1400px;
     margin:0 auto;
     display: flex;
@@ -30,7 +30,7 @@ header,.banner{
     background-image:url('images/bg-hero-desktop.svg');
    
 }
-header{
+.navigation{
     position: relative;
     padding: 2rem 3rem;
 }
@@ -59,13 +59,13 @@ img{
 }
 
 
-header img,
+.navigation img,
 footer img{
     cursor:pointer;
     max-width: 190px;
 }
 
-header .btn{
+.navigation .btn{
     color:var(--color-dark-cyan);
     background-color: white;
 }
@@ -333,7 +333,7 @@ footer a{
         background-color: var(--color-light-pink);
           color:var(--color-dark-cyan);
        }
-       header .btn:hover{
+       .navigation .btn:hover{
            background-color: var(--color-light-grayish-blue);
        
           }
@@ -355,7 +355,7 @@ footer a{
     }
 }
 @media (max-width:56.25em){
-    header{
+    .navigation{
         padding:2rem; 
     }
     .banner{
@@ -379,7 +379,7 @@ footer a{
        max-width: 700px;
        margin-bottom: 2rem;
     }
-    header{
+    .navigation{
         padding: 2rem 1rem 1.2rem;
     }
     .build-community{
@@ -446,10 +446,10 @@ footer a{
     .banner .description-section{
         padding: 0.8rem;
     }
-    header img{
+    .navigation img{
         max-width:140px;
     }
-    header .btn{
+    .navigation .btn{
         padding:0.6rem 2rem;
     }
 }
