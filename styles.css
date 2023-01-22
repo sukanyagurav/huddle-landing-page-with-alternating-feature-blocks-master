@@ -329,7 +329,7 @@ main img{
        
           }
        .btn:active{
-           transform: scale(1.1);
+           transform: scale(1);
            box-shadow: 0 3px 15px -2px;
        }
        .social__links li a:hover::before {
