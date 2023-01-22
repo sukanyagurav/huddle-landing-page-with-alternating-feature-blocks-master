@@ -20,7 +20,7 @@ body{
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
 }
-header,main{
+header,.banner{
     max-width:1400px;
     margin:0 auto;
     display: flex;
@@ -69,11 +69,11 @@ header .btn{
     color:var(--color-dark-cyan);
     background-color: white;
 }
-main{  
+.banner{  
     padding:2rem;
     justify-content: space-evenly;
 }
-main .description-section{
+.banner .description-section{
     max-width:480px;
     padding:1.4rem;
 }
@@ -82,12 +82,12 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
-main h1{
+.banner h1{
     font-size: 2rem;
     animation:from-left var(--duration)  both;
     -webkit-animation:from-left var(--duration)  both;
 }
-main p{
+.banner p{
     margin:1.3rem 0;
     line-height:1.6; 
     animation:from-top var(--duration)  both;
@@ -95,7 +95,7 @@ main p{
     -webkit-animation:from-top var(--duration)  both;
     -webkit-animation-delay:calc(var(--duration) * 0.3);
 }
-main img{
+.banner img{
     max-width:650px;
 }
 .features{
@@ -271,7 +271,7 @@ footer a{
 
 
 
-main img{
+.banner img{
     --duration:1.2s;
     animation:grow-image var(--duration) both;
     -webkit-animation: grow-image var(--duration) both;
@@ -358,24 +358,24 @@ main img{
     header{
         padding:2rem; 
     }
-    main{
+    .banner{
         justify-content: space-between;
     }
     .feature{
         padding: 1rem;
     }
-    main .description-section{
+    .banner .description-section{
         max-width: 390px;
     }
 }
 @media (max-width:49.5em){
-    main{
+    .banner{
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         padding: 1.2rem;
     }
-    main .description-section{
+    .banner .description-section{
        max-width: 700px;
        margin-bottom: 2rem;
     }
@@ -443,7 +443,7 @@ main img{
     .nav__links{
         columns: 1;
     }
-    main .description-section{
+    .banner .description-section{
         padding: 0.8rem;
     }
     header img{
